@@ -1,0 +1,55 @@
+.container{
+    background: linear-gradient(to bottom, #01080f, #66ccff);
+    padding: 20px;
+    border-bottom: 7px solid grey;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 20px;
+    padding-bottom: 80px;
+}
+.container h1{
+    margin-top: -60px;
+    font-size: 55px;
+    font-weight: 700;
+    text-align: center;
+}
+.container h1 span{
+     color: rgb(221, 32, 32);
+}
+.logo{
+    width: 350px;
+    height: 300px;
+    display: block;
+    margin: -40px auto 0;
+}
+.teamDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.teamDiv .memberCard{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    padding: 20px;
+    position: relative; /* Needed for shadow positioning */
+    box-shadow: 0 10px 15px -10px rgba(0, 0, 0, 0.5); /* Bottom shadow */
+
+}
+.memberCard img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.memberCard h2{
+    color: rgb(221, 32, 32);
+    font-size: 29px;
+    text-align: center;
+    font-weight: 700;
+}
+.memberCard p{
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}

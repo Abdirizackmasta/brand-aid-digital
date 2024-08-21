@@ -1,0 +1,102 @@
+.container{
+     background: 
+        linear-gradient(to right, rgba(173, 216, 230, 0.5) 0%, rgba(173, 216, 230, 0.8) 40%, rgba(173, 216, 230, 0.8) 40%, rgb(155, 86, 101) 100%),
+        url('../../assets/nav-background.jpg') center/cover no-repeat;
+        padding: 30px;
+        border-bottom: 7px solid grey;
+}
+.logo{
+        width: 350px;
+        height: 300px;
+        margin: -40px 0;
+}
+.pricingHero h1{
+        text-align: center;
+        font-size: 55px;
+        font-weight: 700;
+        margin-top: -50px;
+        margin-bottom: 30px;
+}
+.pricingHero h1 span{
+        color: rgb(221, 32, 32);
+}
+.packages{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        justify-content: center;
+}
+.package1{
+        min-height: 500px;
+        flex-basis: 28%;
+        padding: 30px;
+        border: 1px solid grey;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background: white;
+        border-radius: 10px;
+}
+.packageTitle1{
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 6px;
+}
+.package1 h1{
+        font-size: 50px;
+}
+.package1 ul{
+        font-size: 33px;
+        font-weight: 700;
+        padding-left: 10px;
+}
+.package2{
+        min-height: 500px;
+        flex-basis: 28%;
+        padding: 30px;
+        border: 1px solid grey;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background: #000;
+        border-radius: 10px;
+        color: white;
+}
+.packageTitle2{
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 6px;
+}
+.package2 h1{
+        font-size: 50px;
+}
+.package2 ul{
+        font-size: 33px;
+        font-weight: 700;
+        padding-left: 10px;
+}
+.package3{
+        min-height: 500px;
+        flex-basis: 28%;
+        padding: 30px;
+        border: 1px solid grey;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background: rgb(221, 32, 32);
+        border-radius: 10px;
+        color: white;
+}
+.packageTitle3{
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 6px;
+}
+.package3 h1{
+        font-size: 50px;
+}
+.package3 ul{
+        font-size: 33px;
+        font-weight: 700;
+        padding-left: 10px;
+}

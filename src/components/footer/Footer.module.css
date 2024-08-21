@@ -1,0 +1,56 @@
+footer{
+        background: 
+        linear-gradient(to right, rgb(104, 145, 158) 0%, rgb(99, 166, 189) 40%, rgb(179, 91, 91) 60%, rgb(223, 16, 16) 100%);
+        padding-bottom: 50px;
+        padding-left: 20px;
+}
+.innerContainer{
+    display: flex;
+}
+.innerContainer h1{
+    font-size: 65px;
+    font-weight: 700;
+}
+.innerContainer h1 span{
+     color: rgb(221, 32, 32);
+}
+    .logo{
+        width: 350px;
+        height: 300px;
+        margin: -40px 0;
+}
+.contentDiv{
+    padding: 15px;
+    background: black;
+    color: #fff;
+    width: 90%;
+    margin: 20px 0;
+    font-size: 22px;
+    border-radius: 12px;
+}
+.infoDev{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 35px;
+}
+
+.infoDev a{
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: black;
+}
+.infoDev a .icon{
+    background-color: rgb(221, 32, 32);
+    width: 35px;
+    height: 35px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}

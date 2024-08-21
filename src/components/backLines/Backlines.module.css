@@ -1,0 +1,10 @@
+.container{
+    display: flex;
+    gap: 10px;
+}
+.container div{
+    /* width: 1px; */
+    height: 50px;
+    rotate: -30deg;
+    background: white;
+}
