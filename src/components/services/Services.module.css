@@ -2,6 +2,7 @@
        background: 
         linear-gradient(to right, rgb(104, 145, 158) 0%, rgb(99, 166, 189) 40%, rgb(179, 91, 91) 60%, rgb(223, 16, 16) 100%);
         padding-bottom: 50px;
+        padding: 10px;
         border-bottom: 7px solid grey;
 }
 
@@ -49,4 +50,111 @@
 .description{
     font-size: 17px;
     font-weight: 600;
+}
+
+
+/* media query */
+
+@media (max-width: 1280px){
+    .header h1{
+        font-size: 50px;
+    }
+    .service{
+        padding: 18px;
+    }
+    .service img{
+        width: 140px;
+        height: 140px;
+    }
+}
+@media (max-width: 1200px){
+    .header h1{
+        font-size: 45px;
+    }
+    .service{
+        padding: 12px;
+        min-height: 320px;
+    }
+    .service img{
+        width: 120px;
+        height: 120px;
+    }
+}
+@media (max-width: 1100px){
+    .header h1{
+        font-size: 40px;
+    }
+    .service h1{
+        font-size: 20px;
+    }
+    .service{
+         flex-basis: 30%;
+    }
+    .service .description{
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .service img{
+        width: 100px;
+        height: 100px;
+    }
+     .service{
+        padding: 8px;
+        min-height: 300px;
+    }
+}
+@media (max-width: 1024px){
+    .header h1{
+        font-size: 38px;
+        margin: 40px 0;
+    }
+    .service .description{
+        font-size: 16px;
+        font-weight: 400;
+    }
+     .service h1{
+        font-size: 18px;
+    }
+}
+@media (max-width: 900px){
+    .header h1{
+        font-size: 30px;
+        margin: 40px 0;
+    }
+    .service .description{
+        font-size: 16px;
+        font-weight: 400;
+    }
+     .service h1{
+        font-size: 18px;
+    }
+}
+@media (max-width: 800px){
+   .service{
+    flex-basis: 48%;
+   }
+}
+@media (max-width: 500px){
+   .service{
+    gap: 10px;
+    flex-basis: 90%;
+    text-align: center;
+    min-height: 350px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.service img{
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+}
+.service h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+.service .description{
+    font-size: 17px;
+    font-weight: 600;
+}
 }
