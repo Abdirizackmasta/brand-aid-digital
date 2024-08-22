@@ -1,31 +1,32 @@
-.upperNav {
+.upperNav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
     position: relative;
+
 }
-.upperNav ul {
+.upperNav ul{
     list-style: none;
     display: flex;
     gap: 20px;
-    transition: all 0.5s ease;
 }
-.upperNav ul li a {
+.upperNav ul li a{
     text-decoration: none;
     font-size: 20px;
     font-weight: 400;
     padding: 13px 17px;
     border-radius: 8px;
     color: rgb(75, 64, 64);
-    transition: all 0.5s;
+    transition: all .5s;
     letter-spacing: 2px;
 }
-.upperNav ul li a:hover {
-    background: linear-gradient(to right, rgb(104, 145, 158) 0%, rgb(99, 166, 189) 40%, rgb(179, 91, 91) 60%, rgb(223, 16, 16) 100%);
+.upperNav ul li a:hover{
+    background: 
+        linear-gradient(to right, rgb(104, 145, 158) 0%, rgb(99, 166, 189) 40%, rgb(179, 91, 91) 60%, rgb(223, 16, 16) 100%);
     color: rgb(219, 211, 211);    
 }
-.iconsDev {
+.iconsDev{
     font-size: 27px;
     color: white;
     position: absolute;
@@ -35,62 +36,58 @@
     display: none;
 }
 @media (max-width: 1280px) {
-    .upperNav ul li a {
+    .upperNav ul li a{
         font-size: 19px;
     }
 }
 @media (max-width: 1200px) {
-    .upperNav ul li a {
+    .upperNav ul li a{
         font-size: 18px;
         padding: 10px 15px;
         letter-spacing: 1px;
     }
-    .upperNav ul {
+    .upperNav ul{
         gap: 12px;
     }
 }
 @media (max-width: 1024px) {
-    .upperNav ul li a {
+    .upperNav ul li a{
         font-size: 17px;
         padding: 10px 15px;
         letter-spacing: 1px;
     }
-    .upperNav ul {
+    .upperNav ul{
         padding-top: 10px;
         gap: 10px;
     }
 }
 @media (max-width: 900px) {
-    .upperNav ul li a {
+    .upperNav ul li a{
         font-size: 15px;
         padding: 6px 10px;
-        letter-spacing: 0.5px;
+        letter-spacing: .5px;
     }
-    .upperNav ul {
+    .upperNav ul{
         padding-top: 10px;
         gap: 10px;
     }
 }
 @media (max-width: 800px) {
-    .upperNav ul {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        background: white;
-        padding: 10px;
-        position: absolute;
-        top: 60px;
-        right: -200px; /* Initial position off-screen */
-        font-size: 20px;
-        border-radius: 8px;
-        font-weight: 900;
-        z-index: 1000;
-        transition: right 0.3s ease-in-out;
-    }
-    .upperNav ul.menuOpen {
-        right: 10px; /* Bring menu into view */
-    }
-    .iconsDev {
-        display: block;
-    }
+   .upperNav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20x;
+    background: white;
+    padding: 10px;
+    position: absolute;
+    top: -300px;
+    right: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    font-weight: 900;
+    transition: all .4s;
+   }
+   .iconsDev{
+    display: block;
+   }
 }

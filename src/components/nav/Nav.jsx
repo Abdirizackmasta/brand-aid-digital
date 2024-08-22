@@ -8,9 +8,9 @@ function Nav() {
     const [openMenu, setMenuOpen] = useState(false);
 
     return (
-        <div className={styles.upperNav}>
+        <div className={styles.upperNav} >
             <Link to="/"><Logo /></Link>
-            <ul className={`${openMenu ? styles.menuOpen : ''}`}>
+            <ul style={openMenu ? { top: '60px' } : {}}>
                 <li><a href="#about">About</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#values">Values</a></li>
@@ -18,8 +18,8 @@ function Nav() {
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#whyus">Why Choose Us</a></li>
             </ul>
-            <div className={styles.iconsDev} onClick={() => setMenuOpen(!openMenu)}>
-                <FaBars />
+            <div className={styles.iconsDev}>
+                <FaBars onClick={() => setMenuOpen(!openMenu)} />
             </div>
         </div>
     );

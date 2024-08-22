@@ -6,6 +6,7 @@
 .container{
     background: linear-gradient(to bottom, #01080f, #66ccff);
     border-bottom: 7px solid grey;
+    overflow-x: hidden;
 }
 
 .lowerNav{
