@@ -1,17 +1,9 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-
-.container{
-    background: linear-gradient(to bottom, #01080f, #66ccff);
-    border-bottom: 7px solid grey;
-}
 .upperNav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
+
 }
 .upperNav ul{
     list-style: none;
@@ -32,44 +24,4 @@
     background: 
         linear-gradient(to right, rgb(104, 145, 158) 0%, rgb(99, 166, 189) 40%, rgb(179, 91, 91) 60%, rgb(223, 16, 16) 100%);
     color: rgb(219, 211, 211);    
-}
-.logo{
-        width: 350px;
-        height: 300px;
-        /* margin: -40px 0; */
-}
-.lowerNav{
-    display: flex;
-}
-.lowerNav div{
-    flex-basis: 50%;
-    gap: 10px;
-    padding: 20px;
-}
-.leftLowerNav div h1{
-    font-size: 55px;
-    color: wheat;
-}
-.leftLowerNav div h1 span{
-     color: rgb(221, 32, 32);
-}
-.heroContent{
-    font-size: 22px;
-    color: rgb(75, 64, 64);
-    font-weight: 500;
-}
-.buttonsDiv{
-    display: flex;
-    gap: 30px;
-}
-.buttonsDiv button{
-    padding: 13px 30px;
-    font-size: 20px;
-    font-weight: 600;
-    background: grey;
-    border: none;
-    border-radius: 6px;
-}
-.rightLowerNav img{
-    width: 600px;
 }

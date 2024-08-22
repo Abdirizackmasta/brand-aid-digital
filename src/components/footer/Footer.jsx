@@ -1,19 +1,17 @@
 import styles from './Footer.module.css'
-import logo from '../../assets/logobg.png'
 import footer from '../../assets/footerbanner.jpeg'
 import { FaLocationDot } from "react-icons/fa6";
 import { IoCall } from "react-icons/io5";
 import { TfiWorld } from "react-icons/tfi";
 import { MdEmail } from "react-icons/md";
+import Logo from '../logo/Logo';
 
 
 
 function Footer() {
     return (
         <footer>
-            <div>
-                <img src={logo} alt="logo" className={styles.logo}/>
-            </div>
+            <Logo />
             <div className={styles.innerContainer}>
                 <div>
                     <div>

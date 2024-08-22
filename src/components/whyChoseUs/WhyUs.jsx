@@ -1,11 +1,11 @@
 import styles from './WhyUs.module.css'
-import logo from '../../assets/logobg.png'
 import { HiMiniBars3 } from "react-icons/hi2";
 import { FiSettings } from "react-icons/fi";
 import { MdLibraryBooks } from "react-icons/md";
 import { MdGroups2 } from "react-icons/md";
 import { PiNotebookDuotone } from "react-icons/pi";
 import { CgProfile } from "react-icons/cg";
+import Logo from '../logo/Logo';
 
 const whyChose = [
     {
@@ -43,8 +43,8 @@ const whyChose = [
 ]
 function WhyUs() {
     return (
-        <div className={styles.container}>
-            <img src={logo} alt="logo" className={styles.logo} />
+        <div className={styles.container} id='whyus'>
+            <Logo />
             <h1>Why Choose <span>US</span></h1>
          <div className={styles.detailsContainer}>
             {whyChose.map((detail, index) => (

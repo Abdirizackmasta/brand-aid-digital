@@ -1,4 +1,3 @@
-import logo from '../../assets/logobg.png';
 import styles from './Services.module.css';
 
 // images
@@ -14,6 +13,7 @@ import socialmedia from '../../assets/social-media.png';
 import ghl from '../../assets/GHLbg.png';
 import analytics from '../../assets/analyticsbg.png';
 import email from '../../assets/emailmarketingbg.png'
+import Logo from '../logo/Logo';
 
 
 
@@ -73,10 +73,8 @@ const servicesList = [
 ]
 function Services() {
     return (
-        <div className={styles.container}>
-            <div>
-                <img src={logo} alt="logo" className={styles.logo}/>
-            </div> 
+        <div className={styles.container} id='services'>
+            <Logo />
             <div className={styles.header}>
                 <h1>Our <span>Services</span></h1>
             </div> 

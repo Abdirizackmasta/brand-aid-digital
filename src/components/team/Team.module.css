@@ -15,12 +15,7 @@
 .container h1 span{
      color: rgb(221, 32, 32);
 }
-.logo{
-    width: 350px;
-    height: 300px;
-    display: block;
-    margin: -40px auto 0;
-}
+
 .teamDiv{
     display: flex;
     align-items: center;

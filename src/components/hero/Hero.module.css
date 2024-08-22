@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background: linear-gradient(to bottom, #01080f, #66ccff);
+    border-bottom: 7px solid grey;
+}
+
+.lowerNav{
+    display: flex;
+}
+.lowerNav div{
+    flex-basis: 50%;
+    gap: 10px;
+    padding: 20px;
+}
+.leftLowerNav div h1{
+    font-size: 55px;
+    color: wheat;
+}
+.leftLowerNav div h1 span{
+     color: rgb(221, 32, 32);
+}
+.heroContent{
+    font-size: 22px;
+    color: rgb(75, 64, 64);
+    font-weight: 500;
+}
+.buttonsDiv{
+    display: flex;
+    gap: 30px;
+}
+.buttonsDiv button{
+    padding: 13px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    background: grey;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.rightLowerNav img{
+    width: 600px;
+}

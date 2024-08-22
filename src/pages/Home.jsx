@@ -5,12 +5,12 @@ import Team from "../components/team/Team"
 import Values from "../components/values/Values"
 import WhyUs from "../components/whyChoseUs/WhyUs"
 import About from "../components/about/About"
-import Nav from "../components/nav/Nav"
+import Hero from "../components/hero/Hero"
 
 function Home() {
     return (
         <div>
-            <Nav />
+            <Hero />
             <About />
             <Team />
             <Values />

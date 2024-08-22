@@ -1,8 +1,8 @@
-import logo from '../../assets/logobg.png'
 import style from "./Team.module.css";
 import clintonImage from "../../assets/clinton.jpg";
 import abdiKarim from "../../assets/abdikarin.jpeg";
 import abdulImage from "../../assets/abdul.jpeg";
+import Logo from '../logo/Logo';
 
 const TeamData = [
     {
@@ -26,8 +26,8 @@ const TeamData = [
 ];
 function Team() {
     return (
-        <div className={style.container}>
-            <img src={logo} alt="logo" className={style.logo}/>
+        <div className={style.container} id='team'>
+            <Logo />
             <h1>Meet Our <span>Team</span></h1>
             <div className={style.teamDiv}>
                 {TeamData.map((person, index) => (

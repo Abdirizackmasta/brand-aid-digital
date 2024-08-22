@@ -14,12 +14,7 @@
 .container h1 span{
     color: rgb(221, 32, 32);
 }
-.logo{
-    height: 300px;
-    width: 350px;
-    display: block;
-    margin: -50px;
-}
+
 .infoDev{
     display: flex;
 }

@@ -1,12 +1,12 @@
-import logo from '../../assets/logobg.png';
 import team from '../../assets/team2.png';
+import Logo from '../logo/Logo';
 // import Backlines from '../backLines/Backlines';
 import style from './About.module.css'
 function About() {
     return (
-        <div className={style.container}>
+        <div className={style.container} id='about'>
             <div className={style.left}>
-                <img className={style.logo} src={logo} alt="logo" />
+                <Logo />
                 <h1>About <span>Us</span></h1>
                 <p>
                     Welcome to Brand Aid Digital Agency where we blend

@@ -14,11 +14,7 @@ footer{
 .innerContainer h1 span{
      color: rgb(221, 32, 32);
 }
-    .logo{
-        width: 350px;
-        height: 300px;
-        margin: -40px 0;
-}
+ 
 .contentDiv{
     padding: 15px;
     background: black;

@@ -1,11 +1,10 @@
 import styles from './Pricing.module.css'
 import logo from '../../assets/logobg.png'
+import Logo from '../logo/Logo'
 function Pricing() {
     return (
-        <div className={styles.container}>
-            <div>
-                <img src={logo} alt="logo" className={styles.logo}/>
-            </div>
+        <div className={styles.container} id='pricing'>
+            <Logo />
             <div className={styles.pricingHero}>
                 <h1>Our <span>Pricing</span></h1>
             </div>

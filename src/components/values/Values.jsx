@@ -1,10 +1,10 @@
-import logo from '../../assets/logobg.png'
 import mainImg from '../../assets/teamwork.webp'
+import Logo from '../logo/Logo'
 import styles from './Values.module.css'
 function Values() {
     return (
-        <div className={styles.container}>
-            <img src={logo} alt="logo" className={styles.logo}/>
+        <div className={styles.container} id='values'>
+            <Logo />
             <h1>Company <span>Values</span></h1>
             <div className={styles.infoDev}>
                 <div className={styles.left}>
