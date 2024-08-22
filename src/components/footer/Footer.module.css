@@ -3,6 +3,7 @@ footer{
         linear-gradient(to right, rgb(104, 145, 158) 0%, rgb(99, 166, 189) 40%, rgb(179, 91, 91) 60%, rgb(223, 16, 16) 100%);
         padding-bottom: 50px;
         padding-left: 20px;
+        overflow: hidden;
 }
 .innerContainer{
     display: flex;
@@ -49,4 +50,92 @@ footer{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+}
+
+/* Media Quires */
+
+@media (max-width: 1280px){
+    .innerContainer h1{
+        font-size: 50px;
+    }
+    .contentDiv{
+        font-size: 19px;
+    }
+    .infoDev a{
+        font-size: 22px;
+    }
+    footer img{
+        width: 680px;
+    }
+}
+@media (max-width: 1200px){
+    .innerContainer h1{
+        font-size: 45px;
+    }
+    .contentDiv{
+        font-size: 17px;
+        padding: 10px;
+    }
+    .infoDev a{
+        font-size: 20px;
+    }
+    footer img{
+        width: 650px;
+    }
+}
+@media (max-width: 1024px){
+    .innerContainer h1{
+        font-size: 35px;
+    }
+    .contentDiv{
+        font-size: 15px;
+        padding: 10px;
+    }
+    .infoDev a{
+        font-size: 17px;
+    }
+    footer img{
+        margin-top: 50px;
+        width: 600px;
+    }
+}
+@media (max-width: 900px){
+    .innerContainer h1{
+        font-size: 30px;
+    }
+    .contentDiv{
+        font-size: 13px;
+        padding: 8px;
+        justify-content: center;
+        align-items: center;
+    }
+    .infoDev a{
+        font-size: 15px;
+    }
+    footer img{
+        margin-top: 80px;
+        width: 550px;
+    }
+}
+@media (max-width: 768px){
+    .innerContainer h1{
+        font-size: 28px;
+    }
+    .contentDiv{
+        font-size: 13px;
+        padding: 8px;
+    }
+    .infoDev a{
+        font-size: 15px;
+    }
+     .infoDev a .icon{
+        font-size: 16px;
+    }
+    .innerContainer{
+        flex-direction: column;
+    }
+    footer img{
+        display: none;
+    }
+    
 }
