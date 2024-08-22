@@ -1,5 +1,4 @@
 import styles from './Pricing.module.css'
-import logo from '../../assets/logobg.png'
 import Logo from '../logo/Logo'
 function Pricing() {
     return (
@@ -13,7 +12,7 @@ function Pricing() {
                     <p className={styles.packageTitle1}>STARTER PACKAGE</p>
                     <h1>$1599/pm</h1>
                     <ul>
-                        <li>BrandDevelopment</li>
+                        <li>Brand Development</li>
                         <li>SocialMedia Marketing</li>
                         <li>WebDesign & Development</li>
                         <li>SEO & SEM</li>
@@ -26,7 +25,7 @@ function Pricing() {
                     </p>
                     <h1>$1599/pm</h1>
                     <ul>
-                        <li>BrandDevelopment</li>
+                        <li>Brand Development</li>
                         <li>SocialMedia Marketing</li>
                         <li>WebDesign & Development</li>
                         <li>SEO & SEM</li>
@@ -37,7 +36,7 @@ function Pricing() {
                     <p  className={styles.packageTitle3}>PREMIUM PACKAGE</p>
                     <h1>$1599/pm</h1>
                     <ul>
-                        <li>BrandDevelopment</li>
+                        <li>Brand Development</li>
                         <li>SocialMedia Marketing</li>
                         <li>WebDesign & Development</li>
                         <li>SEO & SEM</li>

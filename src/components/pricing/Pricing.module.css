@@ -100,3 +100,119 @@
         font-weight: 700;
         padding-left: 10px;
 }
+
+@media (max-width: 1280px){
+        .pricingHero h1{
+                font-size: 50px;
+        }
+        .packages div p{
+                font-size: 21px;
+                letter-spacing: 4px;
+        }
+        .packages div h1{
+                font-size: 45px;
+        }
+        .packages ul{
+                font-size: 30px;
+        }
+}
+@media (max-width: 1200px){
+        .pricingHero h1{
+                font-size: 45px;
+        }
+        .packages div p{
+                font-size: 19px;
+                letter-spacing: 3px;
+        }
+        .packages div h1{
+                font-size: 40px;
+        }
+        .packages ul{
+                font-size: 28px;
+        }
+}
+@media (max-width: 1100px){
+        .pricingHero h1{
+                font-size: 40px;
+        }
+        .packages div p{
+                font-size: 17px;
+                letter-spacing: 3px;
+        }
+        .packages div h1{
+                font-size: 35px;
+        }
+        .packages ul{
+                font-size: 25px;
+        }
+}
+@media (max-width: 1024px){
+       .pricingHero h1{
+                font-size: 35px;
+        }
+        .packages{
+                padding: 15px;
+                gap: 30px;
+        }
+        .packages div p{
+                font-size: 15px;
+                letter-spacing: 3px;
+        }
+        .packages div h1{
+                font-size: 35px;
+        }
+        .packages ul{
+                font-size: 25px;
+        }
+}
+@media (max-width: 900px){
+       .pricingHero h1{
+                font-size: 30px;
+        }
+        .packages div{
+                min-height: 400px;
+                flex-basis: 20%;
+                padding: 8px;
+        }
+        .packages{
+                padding: 10px;
+                gap: 20px;
+        }
+        .packages div p{
+                font-size: 13px;
+                letter-spacing: 3px;
+        }
+        .packages div h1{
+                font-size: 28px;
+        }
+        .packages ul{
+                font-size: 20px;
+                padding:0 20px;
+        }
+}
+@media (max-width: 768px) {
+
+        .packages{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+        }
+        .packages .package1, .packages .package2, .packages .package3{
+                flex-basis: 95%;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+        }
+        .packages div h1{
+                font-size: 40px;
+        }
+        .packages div ul{
+                font-size: 22px;
+        }
+        .packages div p{
+                font-size: 22px;
+        }
+        .pricingHero h1{
+                margin: 30px;
+        }
+}
