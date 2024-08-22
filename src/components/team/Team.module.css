@@ -18,6 +18,7 @@
 
 .teamDiv{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -47,4 +48,71 @@
     font-size: 22px;
     font-weight: 600;
     text-align: center;
+}
+
+@media (max-width: 1280px){
+    .container h1{
+        font-size: 50px;
+        margin-top: -40px;
+    }
+    .memberCard h2{
+        font-size: 26px;
+    }
+}
+@media (max-width: 1200px){
+    .container h1{
+        font-size: 45px;
+    }
+    .memberCard img{
+        width: 250px;
+    }
+    .memberCard h2{
+        font-size: 22px;
+    }
+    .memberCard p{
+        font-size: 20px;
+    }
+}
+@media (max-width: 1024px){
+     .container h1{
+        font-size: 45px;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 1000px){
+     .container h1{
+        font-size: 45px;
+        margin-top: 10px;
+    }
+    .memberCard img{
+        width: 200px;
+    }
+    .memberCard h2{
+        font-size: 20px;
+    }
+    .memberCard p{
+        font-size: 17px;
+    }
+}
+@media (max-width: 700px){
+    .teamDiv{
+        padding: 10px;
+    }
+    .memberCard img{
+        width: 300px;
+    }
+    .memberCard h2{
+        font-size: 23px;
+    }
+    .memberCard p{
+        font-size: 19px;
+    }
+}
+@media (max-width: 500px){
+    .container h1{
+        margin: 20px 0;
+    }
+     .memberCard img{
+        width: 400px;
+     }
 }

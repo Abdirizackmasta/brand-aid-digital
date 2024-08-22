@@ -25,3 +25,40 @@
         linear-gradient(to right, rgb(104, 145, 158) 0%, rgb(99, 166, 189) 40%, rgb(179, 91, 91) 60%, rgb(223, 16, 16) 100%);
     color: rgb(219, 211, 211);    
 }
+@media (max-width: 1280px) {
+    .upperNav ul li a{
+        font-size: 19px;
+    }
+}
+@media (max-width: 1200px) {
+    .upperNav ul li a{
+        font-size: 18px;
+        padding: 10px 15px;
+        letter-spacing: 1px;
+    }
+    .upperNav ul{
+        gap: 12px;
+    }
+}
+@media (max-width: 1024px) {
+    .upperNav ul li a{
+        font-size: 17px;
+        padding: 10px 15px;
+        letter-spacing: 1px;
+    }
+    .upperNav ul{
+        padding-top: 10px;
+        gap: 10px;
+    }
+}
+@media (max-width: 900px) {
+    .upperNav ul li a{
+        font-size: 15px;
+        padding: 6px 10px;
+        letter-spacing: .5px;
+    }
+    .upperNav ul{
+        padding-top: 10px;
+        gap: 10px;
+    }
+}

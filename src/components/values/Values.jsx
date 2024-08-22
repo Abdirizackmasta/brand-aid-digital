@@ -8,7 +8,7 @@ function Values() {
             <h1>Company <span>Values</span></h1>
             <div className={styles.infoDev}>
                 <div className={styles.left}>
-                    <img src={mainImg} alt="" />
+                    <img src={mainImg} alt="main-image" />
                 </div>
                 <div className={styles.right}>
                     <div>

@@ -25,7 +25,7 @@
 }
 .heroContent{
     font-size: 22px;
-    color: rgb(75, 64, 64);
+    color: rgb(250, 246, 246);
     font-weight: 500;
 }
 .buttonsDiv{
@@ -40,7 +40,122 @@
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    color: rgb(250, 246, 246);
 }
 .rightLowerNav img{
     width: 600px;
+}
+
+/* Media queries */
+@media (max-width: 1280px){
+    .leftLowerNav div h1{
+        font-size: 50px;
+    }
+    .heroContent{
+        font-size: 21px;
+    }
+    .rightLowerNav img{
+        width: 580px;
+    }
+    .lowerNav{
+        margin-top: -30px;
+    }
+}
+@media (max-width: 1200px){
+    .leftLowerNav div h1{
+        font-size: 45px;
+    }
+    .heroContent{
+        font-size: 19px;
+    }
+    .rightLowerNav img{
+        width: 500px;
+    }
+    .lowerNav{
+        margin-top: -30px;
+    }
+    .buttonsDiv button{
+        padding: 11px 25px;
+        font-size: 18px;
+    }
+}
+@media (max-width: 1024px){
+    .leftLowerNav div h1{
+        font-size: 40px;
+    }
+    .heroContent{
+        font-size: 18px;
+    }
+    .rightLowerNav img{
+        width: 450px;
+    }
+    .lowerNav{
+        margin-top: -20px;
+    }
+    .buttonsDiv button{
+        padding: 10px 20px;
+        font-size: 17px;
+    }
+}
+@media (max-width: 900px){
+    .leftLowerNav div h1{
+        font-size: 30px;
+    }
+    .heroContent{
+        font-size: 17px;
+    }
+    .rightLowerNav img{
+        width: 400px;
+    }
+    .lowerNav{
+        margin-top: 10px;
+    }
+    .buttonsDiv button{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 800px){
+    .leftLowerNav div h1{
+        font-size: 28px;
+    }
+    .heroContent{
+        font-size: 16px;
+    }
+    .rightLowerNav img{
+        display: block;
+        width: 400px;
+    }
+    .lowerNav{
+        margin-top: 20px;
+    }
+    .buttonsDiv button{
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+    /* .lowerNav div{
+        padding: 9px;
+    } */
+}
+@media (max-width: 768px){
+    .leftLowerNav{
+        padding: 20px;
+    }
+    .lowerNav{
+        flex-direction: column;
+    }
+
+    .rightLowerNav img{
+       margin-left: -50px;
+        width: 600px;
+    }
+    .rightLowerNav{
+        padding: 0;
+    }
+}
+
+@media (max-width: 500px){
+    .rightLowerNav img{
+        width: 500px;
+    }
 }

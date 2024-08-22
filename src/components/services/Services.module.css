@@ -2,7 +2,7 @@
        background: 
         linear-gradient(to right, rgb(104, 145, 158) 0%, rgb(99, 166, 189) 40%, rgb(179, 91, 91) 60%, rgb(223, 16, 16) 100%);
         padding-bottom: 50px;
-        border: 7px solid grey;
+        border-bottom: 7px solid grey;
 }
 
 .header h1{
