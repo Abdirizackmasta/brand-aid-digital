@@ -2,7 +2,8 @@ import styles from './Services.module.css';
 
 // images
 import digital from '../../assets/digitalbg.png';
-import contentmarketing from '../../assets/CONTENT.png';
+import contentmarketing from '../../assets/contentbg.png';
+import content from '../../assets/CONTENT.png';
 import branding from '../../assets/branding.png';
 // import logodesign from '../../assets/logodesign.png';
 import seo from '../../assets/SEO-bg.png';
@@ -64,7 +65,7 @@ const servicesList = [
         description:'Utilizing GoHighLevel for all-in-one sales and marketing automation, including CRM management,automated follow-ups,and pipeline management.'
     },
     {
-        image: contentmarketing,
+        image: content,
         title: 'Content Marketing and Production',
         description:' Developing and producing high-quality content tailored to resonate with the Kenyan audience.'
     },
