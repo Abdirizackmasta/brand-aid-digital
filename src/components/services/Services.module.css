@@ -12,6 +12,7 @@
         font-weight: 700;
         margin-top: -50px;
         margin-bottom: 30px;
+        color: white;
 }
 .header span{
      color: rgb(221, 32, 32);
@@ -34,7 +35,8 @@
     min-height: 350px;
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    color: rgb(212, 208, 208);
 }
 .service img{
     width: 150px;
@@ -42,6 +44,7 @@
     object-fit: contain;
     display: block;
     margin: 0 auto;
+    filter: grayscale(100%);
 }
 .service h1{
     font-size: 23px;

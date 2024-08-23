@@ -2,7 +2,6 @@
     background: linear-gradient(to bottom, #01080f, #66ccff);
     padding: 20px;
     border-bottom: 7px solid grey;
-    font-family: "Roboto", sans-serif;
     margin-bottom: 20px;
     padding-bottom: 80px;
 }
@@ -11,6 +10,7 @@
     font-size: 55px;
     font-weight: 700;
     text-align: center;
+    color: white;
 }
 .container h1 span{
      color: rgb(221, 32, 32);

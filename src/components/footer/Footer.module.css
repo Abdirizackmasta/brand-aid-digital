@@ -11,6 +11,7 @@ footer{
 .innerContainer h1{
     font-size: 65px;
     font-weight: 700;
+    color: white;
 }
 .innerContainer h1 span{
      color: rgb(221, 32, 32);

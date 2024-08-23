@@ -9,7 +9,6 @@
 .container{
      background: linear-gradient(to right, #04080c 40%, #060a0e 45%, #66ccff 55%, #66ccff 60%);     color: white;
      display: flex;
-     font-family: "Roboto", sans-serif;
      border-bottom: 7px solid grey;
      padding-bottom: 10px;
 }

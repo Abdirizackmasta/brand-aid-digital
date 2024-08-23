@@ -1,7 +1,6 @@
 .container{
     background: linear-gradient(to bottom, #01080f, #66ccff);
     padding: 60px;
-    font-family: "Roboto", sans-serif;
     margin-top: -20px;
     border-bottom: 7px solid grey;
     overflow: hidden;
