@@ -5,17 +5,17 @@ import abdulImage from "../../assets/abdul.jpeg";
 import Logo from '../logo/Logo';
 
 const TeamData = [
+     {
+        name: "Abdikarim Hassan",
+        image: abdiKarim,
+        position: "Chief Executive Officer",
+        index: 2,
+    },
     {
         name: "Clinton Omwoyo",
         image: clintonImage,
         position: "Managing Director",
         index: 1,
-    },
-    {
-        name: "Abdikarim Hassan",
-        image: abdiKarim,
-        position: "Chief Executive Officer",
-        index: 2,
     },
     {
         name: "Abdirizack Adan",

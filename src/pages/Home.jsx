@@ -1,5 +1,5 @@
 import Footer from "../components/footer/Footer"
-import Pricing from "../components/pricing/Pricing"
+// import Pricing from "../components/pricing/Pricing"
 import Services from "../components/services/Services"
 import Team from "../components/team/Team"
 import Values from "../components/values/Values"
@@ -15,7 +15,7 @@ function Home() {
             <Team />
             <Values />
             <Services />
-            <Pricing />
+            {/* <Pricing /> */}
             <WhyUs />
             <Footer />
         </div>
