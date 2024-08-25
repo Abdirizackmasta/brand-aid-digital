@@ -21,7 +21,7 @@ function Footer() {
                     <div className={styles.infoDev}>
                         <a href='tel:+16145269138'>
                             <span className={styles.icon}><IoCall /></span>
-                            <span>+1 (614) 526-9138</span>
+                            <span>+1 (216)307-6035</span>
                         </a>
                         <a href='https://www.brandaiddigital.com'>
                             <span className={styles.icon}><TfiWorld /></span>
@@ -33,7 +33,7 @@ function Footer() {
                         </a>
                         <a href=''>
                             <span className={styles.icon}><FaLocationDot /></span>
-                            <span>00100 - Nairobi, Kenya</span>
+                            <span>470 W broad St 718 , Columbus OH 43215</span>
                         </a>
                     </div>
                 </div>  

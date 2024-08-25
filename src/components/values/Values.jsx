@@ -1,6 +1,11 @@
+import { motion } from "framer-motion";
+
+
+
 import mainImg from '../../assets/teamwork.webp'
 import Logo from '../logo/Logo'
 import styles from './Values.module.css'
+import { fadeIn, textVariant } from "../../hooks/motion";
 function Values() {
     return (
         <div className={styles.container} id='values'>
@@ -10,7 +15,7 @@ function Values() {
                 <div className={styles.left}>
                     <img src={mainImg} alt="main-image" />
                 </div>
-                <div className={styles.right}>
+                <motion.div className={styles.right} variants={textVariant(0.5)} >
                     <div>
                         <p className={styles.title}>INNOVATION</p>
                         <p>We are committed to staying ahead of the curve by leveraging cutting-edge technologies and creative strategies to deliver unique and impactful solutions.</p>
@@ -24,7 +29,7 @@ function Values() {
                         <p className={styles.title}>INTEGRITY</p>
                         <p>We uphold ethical standards and transparency in all our dealings, fostering trust and building strong, long-lasting relationships with our clients and partners.</p>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     )

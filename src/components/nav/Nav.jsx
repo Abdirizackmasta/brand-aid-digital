@@ -15,7 +15,6 @@ function Nav() {
                 <li onClick={() => setMenuOpen(!openMenu)}><a href="#team">Team</a></li>
                 <li onClick={() => setMenuOpen(!openMenu)}><a href="#values">Values</a></li>
                 <li onClick={() => setMenuOpen(!openMenu)}><a href="#services">Services</a></li>
-                <li onClick={() => setMenuOpen(!openMenu)}><a href="#pricing">Pricing</a></li>
                 <li onClick={() => setMenuOpen(!openMenu)}><a href="#whyus">Why Choose Us</a></li>
             </ul>
             <div className={styles.iconsDev}>

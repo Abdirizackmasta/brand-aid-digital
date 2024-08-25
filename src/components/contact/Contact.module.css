@@ -124,7 +124,7 @@
     .right form label{
         font-size: 14px;
     }
-   .right form input,.right form select{
+   .right form input,.right form select, .right form textarea{
         padding: 10px;
         font-size: 14px;
     }
@@ -139,5 +139,10 @@
         }
         .container{
         flex-direction: column;
+        padding: 10px;
+    }
+     .right form textarea{
+        padding: 10px;
+        font-size: 12px;
     }
 }
