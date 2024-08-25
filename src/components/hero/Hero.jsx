@@ -18,7 +18,7 @@ function Hero() {
                     </div>
                     <div className={styles.buttonsDiv}>
                         <Link to='/contact'>
-                            <button>Contact for Consultation</button>
+                            <button>Request a quote</button>
                         </Link>
                         <a href="#about">
                             <button>Learn More&#8595;</button>

@@ -6,8 +6,6 @@ import { TfiWorld } from "react-icons/tfi";
 import { MdEmail } from "react-icons/md";
 import Logo from '../logo/Logo';
 
-
-
 function Footer() {
     return (
         <footer>
@@ -21,11 +19,11 @@ function Footer() {
                         <p>Ready to take your brand to the next level, we're here to help! Whether you need a comprehensive digital strategy or specific services to enhance your online presence, our team is ready to partner with you.</p>
                     </div>
                     <div className={styles.infoDev}>
-                        <a href='tel:+1 (614) 526-9138 '>
+                        <a href='tel:+16145269138'>
                             <span className={styles.icon}><IoCall /></span>
-                            <span>+1 (614) 526-9138 </span>
+                            <span>+1 (614) 526-9138</span>
                         </a>
-                        <a href='www.brandaiddigital.com'>
+                        <a href='https://www.brandaiddigital.com'>
                             <span className={styles.icon}><TfiWorld /></span>
                             <span>www.brandaiddigital.com</span>
                         </a>
@@ -43,9 +41,9 @@ function Footer() {
                     <img src={footer} alt="footer-banner" />
                 </div>
             </div>
-            
+            <div className={styles.copyright}><p>&copy; {new Date().getFullYear()} brand-aid digital| All rights reserved by brand-aid digital.Est. 2024</p></div>
         </footer>
     )
 }
 
-export default Footer
+export default Footer;

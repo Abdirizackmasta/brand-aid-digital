@@ -1,5 +1,6 @@
 .container{
-    background: linear-gradient(to bottom, #01080f, #66ccff);
+     background: 
+        linear-gradient(to right, rgb(104, 145, 158) 0%, rgb(99, 166, 189) 40%, rgb(87, 85, 85) 60%, rgb(36, 35, 35) 100%);
     padding: 20px;
     border-bottom: 7px solid grey;
     margin-bottom: 20px;

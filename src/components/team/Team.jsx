@@ -1,7 +1,7 @@
 import style from "./Team.module.css";
 import clintonImage from "../../assets/clinton.jpg";
 import abdiKarim from "../../assets/abdikarin.jpeg";
-import abdulImage from "../../assets/abdul.jpeg";
+import abdulImage from "../../assets/abdirizaack.jpeg";
 import Logo from '../logo/Logo';
 
 const TeamData = [

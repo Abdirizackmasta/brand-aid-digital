@@ -1,4 +1,4 @@
-import team from '../../assets/team2.png';
+import team from '../../assets/about3.png';
 import Logo from '../logo/Logo';
 // import Backlines from '../backLines/Backlines';
 import style from './About.module.css'

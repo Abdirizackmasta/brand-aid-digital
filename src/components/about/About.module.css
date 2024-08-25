@@ -3,11 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
-
 .container{
-     background: linear-gradient(to right, #04080c 40%, #060a0e 45%, #66ccff 55%, #66ccff 60%);     color: white;
+      background: 
+        linear-gradient(to right, rgb(104, 145, 158) 0%, rgb(99, 166, 189) 40%, rgb(87, 85, 85) 60%, rgb(36, 35, 35) 100%);
+     color: white;
      display: flex;
      border-bottom: 7px solid grey;
      padding-bottom: 10px;
@@ -36,13 +35,10 @@
     color: rgb(221, 32, 32);
 }
 .right img{
-    width: 120%;
-    height: 500px;
-    position: absolute;
-    right: -10px;
-    bottom: 0;
-    z-index: 1;
-    bottom: -10px;
+    width: 100%;
+    height: 80%;
+   margin-top: 140px;
+    
 
 }
 
