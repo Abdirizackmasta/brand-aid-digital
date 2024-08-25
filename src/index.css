@@ -6,4 +6,9 @@ html{
     box-sizing: border-box;
      font-family: sans-serif;
     scroll-behavior: smooth;
+    body {
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 }
