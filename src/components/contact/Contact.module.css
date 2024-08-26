@@ -57,6 +57,9 @@
     font-size: 17px;
     border-radius: 4px;
 }
+.right form textarea:focus{
+    
+}
 .right form textarea{
     width: 100%;
     box-sizing: border-box;
