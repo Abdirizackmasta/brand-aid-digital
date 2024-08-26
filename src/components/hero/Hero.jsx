@@ -2,20 +2,27 @@ import hero from '../../assets/hero.jpg'
 import Nav from '../nav/Nav'
 import styles from './Hero.module.css'
 import { Link } from 'react-router-dom'
+import { motion } from "framer-motion";
+import { fadeIn, slideIn, staggerContainer } from '../../hooks/motion';
+
 
 
 function Hero() {
     return (
         <div className={styles.container}>
             <Nav />
-            <div className={styles.lowerNav}>
+            <motion.div className={styles.lowerNav}
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.25 }}>
                 <div className={styles.leftLowerNav}>
-                    <div>
+                    <motion.div variants={fadeIn("right", "tween", 0.2, 1)}>
                         <h1>Navigating the digital <span>landscape for success!</span></h1>
-                    </div>
-                    <div className={styles.heroContent}>
+                    </motion.div>
+                    <motion.div  variants={fadeIn("left", "tween", 0.4, 1)} className={styles.heroContent}>
                         <p>We empower organizations with tailored digital solutions, including system assessments, API development, SEO, PPC, and custom software development. Achieve growth and efficiency with brand aid digital.</p>
-                    </div>
+                    </motion.div>
                     <div className={styles.buttonsDiv}>
                         <Link to='/contact'>
                             <button>Request a quote</button>
@@ -25,10 +32,10 @@ function Hero() {
                         </a>
                     </div>
                 </div> 
-                <div className={styles.rightLowerNav}>
-                    <img src={hero} alt="hero-image" />
-                </div> 
-            </div>
+                <motion.div className={styles.rightLowerNav} variants={fadeIn("up", "tween", 0.3, 1)}>
+                    <motion.img variants={slideIn("up", "tween", 0.5, 1.3)} src={hero} alt="hero-image" />
+                </motion.div> 
+            </motion.div>
         </div>
     )
 }

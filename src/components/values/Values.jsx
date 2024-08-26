@@ -5,12 +5,17 @@ import { motion } from "framer-motion";
 import mainImg from '../../assets/teamwork.webp'
 import Logo from '../logo/Logo'
 import styles from './Values.module.css'
-import { fadeIn, textVariant } from "../../hooks/motion";
+import { fadeIn, staggerContainer, textVariant } from "../../hooks/motion";
 function Values() {
     return (
-        <div className={styles.container} id='values'>
+        <motion.div className={styles.container} id='values'
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.25 }}
+        >
             <Logo />
-            <h1>Company <span>Values</span></h1>
+            <motion.h1 variants={fadeIn("left", "tween", 0.4, 1)}>Company <span>Values</span></motion.h1>
             <div className={styles.infoDev}>
                 <div className={styles.left}>
                     <img src={mainImg} alt="main-image" />
@@ -31,7 +36,7 @@ function Values() {
                     </div>
                 </motion.div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

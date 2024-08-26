@@ -15,7 +15,8 @@ import ghl from '../../assets/GHLbg.png';
 import analytics from '../../assets/analyticsbg.png';
 import email from '../../assets/emailmarketingbg.png'
 import Logo from '../logo/Logo';
-
+import { fadeIn, slideIn, staggerContainer } from '../../hooks/motion';
+import {motion} from 'framer-motion'
 
 
 const servicesList = [
@@ -32,12 +33,12 @@ const servicesList = [
     {
         image: socialmedia,
         title: 'Social Media Marketing',
-        description:'Creating compelling to attract and retain customers.'
+        description:'Creating compelling content to attract and retain customers.'
     },
     {
         image: contentmarketing,
         title: 'Content Marketing',
-        description:'Engaging and growing audience across social platfroms.'
+        description:'Engaging and growing audience across social platforms.'
     },
     {
         image: seo,
@@ -46,8 +47,8 @@ const servicesList = [
     },
     {
         image: websites,
-        title: 'Web Design and development',
-        description:'Buildinguser-friendly and visually appealing websites.'
+        title: 'Web Design and Development',
+        description:'Building user-friendly and visually appealing websites.'
     },
     {
         image: email,
@@ -57,38 +58,47 @@ const servicesList = [
     {
         image: analytics,
         title: 'Analytics & Reporting',
-        description:'Measuring performancea nd providing actionable insights.'
+        description:'Measuring performance and providing actionable insights.'
     },
     {
         image: ghl,
-        title: 'GHL(GoHighLevel) services',
-        description:'Utilizing GoHighLevel for all-in-one sales and marketing automation, including CRM management,automated follow-ups,and pipeline management.'
+        title: 'GHL (GoHighLevel) Services',
+        description:'Utilizing GoHighLevel for all-in-one sales and marketing automation, including CRM management, automated follow-ups, and pipeline management.'
     },
     {
         image: content,
         title: 'Content Marketing and Production',
-        description:' Developing and producing high-quality content tailored to resonate with the Kenyan audience.'
+        description:'Developing and producing high-quality content tailored to resonate with the Kenyan audience.'
     },
- 
+];
 
-]
 function Services() {
     return (
-        <div className={styles.container} id='services'>
+        <motion.div
+            variants={staggerContainer}
+            initial="show"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.25 }}
+            className={styles.container} id='services'>
             <Logo />
-            <div className={styles.header}>
-                <h1>Our <span>Services</span></h1>
-            </div> 
+            <motion.div className={styles.header}
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.25 }}
+            >
+                <motion.h1 variants={fadeIn("left", "tween", 0.4, 1)}>Our <span>Services</span></motion.h1>
+            </motion.div> 
             <div className={styles.services}>
                {servicesList.map((service, index) => (
                 <div key={index} className={styles.service}>
                     <img src={service.image} alt="" />
-                    <h1>{service.title}</h1>
+                    <motion.h1 variants={fadeIn("left", "tween", 0.4, 1)}>{service.title}</motion.h1>
                     <p className={styles.description}>{service.description}</p>
                 </div>
             ))}
             </div> 
-        </div>
+        </motion.div>
     )
 }
 

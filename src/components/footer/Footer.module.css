@@ -57,6 +57,9 @@ footer{
     font-size: 19px;
     color: rgb(34, 33, 33);
 }
+.copyright a{
+    text-decoration: none;
+}
 /* Media Quires */
 
 @media (max-width: 1280px){

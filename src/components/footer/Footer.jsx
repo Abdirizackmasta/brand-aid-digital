@@ -19,9 +19,9 @@ function Footer() {
                         <p>Ready to take your brand to the next level, we're here to help! Whether you need a comprehensive digital strategy or specific services to enhance your online presence, our team is ready to partner with you.</p>
                     </div>
                     <div className={styles.infoDev}>
-                        <a href='tel:+16145269138'>
+                        <a href='(216)307-6035'>
                             <span className={styles.icon}><IoCall /></span>
-                            <span>+1 (216)307-6035</span>
+                            <span>(216)307-6035</span>
                         </a>
                         <a href='https://www.brandaiddigital.com'>
                             <span className={styles.icon}><TfiWorld /></span>
@@ -41,7 +41,7 @@ function Footer() {
                     <img src={footer} alt="footer-banner" />
                 </div>
             </div>
-            <div className={styles.copyright}><p>&copy; {new Date().getFullYear()} brand-aid digital| All rights reserved by brand-aid digital.Est. 2024</p></div>
+            <div className={styles.copyright}><p>&copy; {new Date().getFullYear()} brand-aid digital| All rights reserved by brand-aid digital.Est. 2024.Designed by <a href="https://abdirizack-masta.netlify.app/">Masta</a></p></div>
         </footer>
     )
 }

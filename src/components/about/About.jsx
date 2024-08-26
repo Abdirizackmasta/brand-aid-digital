@@ -1,14 +1,23 @@
 import team from '../../assets/about3.png';
+import {motion} from 'framer-motion';
 import Logo from '../logo/Logo';
 // import Backlines from '../backLines/Backlines';
 import style from './About.module.css'
+import { fadeIn, slideIn, staggerContainer } from '../../hooks/motion';
+
+
 function About() {
     return (
-        <div className={style.container} id='about'>
+        <motion.div className={style.container} id='about'
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.25 }}
+        >
             <div className={style.left}>
                 <Logo />
-                <h1>About <span>Us</span></h1>
-                <p>
+                <motion.h1 variants={fadeIn("left", "tween", 0.4, 1)} >About <span>Us</span></motion.h1>
+                <motion.p variants={fadeIn("right", "tween", 0.4, 1)}>
                     Welcome to Brand Aid Digital Agency where we blend
                     creativity and strategy to boost your brand's online
                     presence. We're an all-in-one digital agency dedicated
@@ -27,12 +36,12 @@ function About() {
                     answers. We believe teamwork is key and work hand-in-hand
                     with our clients to get what they need, what
                     they're aiming for, and how their market works.
-                </p>
+                </motion.p>
             </div>
             <div className={style.right}>
                 <img src={team} alt="about-image" />
             </div>
-        </div>
+        </motion.div>
     )
 }
 

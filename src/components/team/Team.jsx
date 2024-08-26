@@ -3,7 +3,7 @@ import clintonImage from "../../assets/clinton.jpg";
 import abdiKarim from "../../assets/abdikarin.jpeg";
 import abdulImage from "../../assets/abdirizaack.jpeg";
 import Logo from '../logo/Logo';
-
+import {motion} from 'framer-motion'
 const TeamData = [
      {
         name: "Abdikarim Hassan",
@@ -31,7 +31,7 @@ function Team() {
             <h1>Meet Our <span>Team</span></h1>
             <div className={style.teamDiv}>
                 {TeamData.map((person, index) => (
-                    <div key={index} className={style.memberCard}>
+                    <div key={index} className={style.memberCard} >
                         <img src={person.image} alt={person.name} className="team-member-image" />
                         <h2>{person.name}</h2>
                         <p>{person.position}</p>

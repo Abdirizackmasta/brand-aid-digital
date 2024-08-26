@@ -37,6 +37,11 @@
     padding: 20px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     color: rgb(255, 255, 255);
+    transition: all .5s;
+    cursor: pointer;
+}
+.service:hover{
+    transform: scale(1.05);
 }
 .service img{
     width: 150px;
@@ -132,32 +137,43 @@
         font-size: 18px;
     }
 }
-@media (max-width: 800px){
-   .service{
-    flex-basis: 48%;
-   }
+@media (max-width: 800px) {
+    .services {
+        flex-direction: column;
+        padding: 20px 40px;
+    }
+    .service {
+        width: 100%; /* Ensure each service div takes the full width */
+        padding: 20px;
+        height: 100%;
+        flex-grow: 1;
+        box-sizing: border-box; /* Ensure padding doesn't affect the width */
+    }
 }
-@media (max-width: 500px){
-   .service{
-    gap: 10px;
-    flex-basis: 90%;
-    text-align: center;
-    min-height: 350px;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.service img{
+
+@media (max-width: 500px) {
+    .service {
+        gap: 10px;
+        flex-basis: 90%;
+        text-align: center;
+        min-height: 350px; /* Fixed height to ensure consistency */
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: 100%; /* Maintain equal height */
+        flex-grow: 1;
+    }
+    .service img {
         width: 150px;
         height: 150px;
         object-fit: contain;
-}
-.service h1{
-    font-size: 30px;
-    font-weight: 700;
-}
-.service .description{
-    font-size: 17px;
-    font-weight: 600;
-}
+    }
+    .service h1 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .service .description {
+        font-size: 17px;
+        font-weight: 600;
+    }
 }

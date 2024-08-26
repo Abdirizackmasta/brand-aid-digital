@@ -35,6 +35,11 @@
     flex-direction: column;
     gap: 20px;
     position: relative;
+    transition: all .5s;
+    cursor: pointer;
+}
+.detail:hover{
+    transform: scale(1.05);
 }
 .content{
     font-size: 22px;
@@ -88,16 +93,38 @@
     }
 }
 @media (max-width: 900px){
+    .detailsContainer{
+        padding: 10px;
+    }
+    .detail h3{
+        font-size: 14px;
+    }
+    .content{
+        font-size: 17px;
+    }
     .container h1{
         font-size: 30px;
         margin: 30px 0;
     }
+    .container{
+        padding: 20px;
+    }
 }
-@media (max-width: 700px){
+@media (max-width: 800px){
+    .container{
+        padding:20px 40px;
+    }
     .detailsContainer{
         flex-direction: column;
     }
+    .content{
+        font-size: 19px;
+    }
     .detail{
-        flex-basis: 95%;
+        border-radius: 25px;
+        padding: 20px 10px;
+    }
+    .detail h3{
+        font-size: 16px;
     }
 }

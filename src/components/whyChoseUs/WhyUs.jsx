@@ -6,6 +6,8 @@ import { MdGroups2 } from "react-icons/md";
 import { PiNotebookDuotone } from "react-icons/pi";
 import { CgProfile } from "react-icons/cg";
 import Logo from '../logo/Logo';
+import { motion } from 'framer-motion';
+import { fadeIn, staggerContainer } from '../../hooks/motion';
 
 const whyChose = [
     {

@@ -21,7 +21,7 @@
     transition: all .5s;
     letter-spacing: 2px;
 }
-.upperNav ul li a:hover{
+.upperNav ul li a:active{
     background: 
         linear-gradient(to right, rgb(104, 145, 158) 0%, rgb(99, 166, 189) 40%, rgb(179, 91, 91) 60%, rgb(223, 16, 16) 100%);
     color: rgb(219, 211, 211);    
