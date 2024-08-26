@@ -17,10 +17,10 @@ function Hero() {
                 whileInView="show"
                 viewport={{ once: false, amount: 0.25 }}>
                 <div className={styles.leftLowerNav}>
-                    <motion.div variants={fadeIn("right", "tween", 0.2, 1)}>
+                    <motion.div variants={fadeIn("right", "tween", 0.2, 0.6)}>
                         <h1>Navigating the digital <span>landscape for success!</span></h1>
                     </motion.div>
-                    <motion.div  variants={fadeIn("left", "tween", 0.4, 1)} className={styles.heroContent}>
+                    <motion.div  variants={fadeIn("left", "tween", 0.4, 0.6)} className={styles.heroContent}>
                         <p>We empower organizations with tailored digital solutions, including system assessments, API development, SEO, PPC, and custom software development. Achieve growth and efficiency with brand aid digital.</p>
                     </motion.div>
                     <div className={styles.buttonsDiv}>
@@ -33,7 +33,7 @@ function Hero() {
                     </div>
                 </div> 
                 <motion.div className={styles.rightLowerNav} variants={fadeIn("up", "tween", 0.3, 1)}>
-                    <motion.img variants={slideIn("up", "tween", 0.5, 1.3)} src={hero} alt="hero-image" />
+                    <motion.img variants={slideIn("up", "tween", 0.7, 0.6)} src={hero} alt="hero-image" />
                 </motion.div> 
             </motion.div>
         </div>

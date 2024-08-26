@@ -1,5 +1,5 @@
 import { FaArrowLeftLong } from "react-icons/fa6";
-import styles from './Contact.module.css'
+import styles from './Contact.module.css';
 import { Link } from "react-router-dom";
 import emailjs from '@emailjs/browser';
 import { useState } from "react";
@@ -11,16 +11,15 @@ function Contact() {
     const [date, setDate] = useState('');
     const [time, setTime] = useState('');
     const [message, setMessage] = useState('');
+    const [successMessage, setSuccessMessage] = useState('');
 
     function handleSubmit(e) {
         e.preventDefault();
 
-        // keys
         const service_id = 'service_x85jum5';
         const template_id = 'template_nd7thkj';
         const public_key = 'Von18_dAjskZ9OaaV';
 
-        // templateParams
         const templateParams = {
             from_name: name,
             to_name: 'brand-aid',
@@ -40,8 +39,15 @@ function Contact() {
                 setDate('');
                 setTime('');
                 setMessage('');
+                setSuccessMessage('Your message has been sent successfully!');
+
+                // Clear the success message after 5 seconds
+                setTimeout(() => {
+                    setSuccessMessage('');
+                }, 5000);
             }, (error) => {
                 console.log('FAILED...', error.text);
+                setSuccessMessage('');
             });
     }
 
@@ -102,8 +108,9 @@ function Contact() {
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                     ></textarea>
-                    <button type="submit" onSubmit={handleSubmit}>Submit</button>
+                    <button type="submit">Submit</button>
                 </form>
+                {successMessage && <p className={styles.successMessage}>{successMessage}</p>}
             </div>
         </div>
     );
