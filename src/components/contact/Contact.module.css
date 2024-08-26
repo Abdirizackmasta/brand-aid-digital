@@ -133,6 +133,7 @@
    .right form input,.right form select, .right form textarea{
         padding: 10px;
         font-size: 14px;
+        box-sizing: border-box;
     }
     .back{
         font-size: 35px;

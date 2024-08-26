@@ -41,7 +41,7 @@ function Footer() {
                     <img src={footer} alt="footer-banner" />
                 </div>
             </div>
-            <div className={styles.copyright}><p>&copy; {new Date().getFullYear()} brand-aid digital| All rights reserved by brand-aid digital.Est. 2024.Designed by <a href="https://abdirizack-masta.netlify.app/">Masta</a></p></div>
+            <div className={styles.copyright}><p>&copy; {new Date().getFullYear()} brand-aid digital| All rights reserved by brand-aid digital.Est. 2024.</p></div>
         </footer>
     )
 }
