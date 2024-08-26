@@ -57,6 +57,10 @@
     font-size: 17px;
     border-radius: 4px;
 }
+.right form textarea{
+    width: 100%;
+    box-sizing: border-box;
+}
 .right form button{
     padding: 20px;
     width: 100%;
